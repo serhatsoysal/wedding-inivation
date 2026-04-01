@@ -1,10 +1,11 @@
 import ScrollReveal from "./ScrollReveal";
+import { assetUrl } from "../utils/assetUrl";
 
 const galleryImages = [
-  "/assets/back-ground.png",
-  "/assets/story-background.png",
-  "/assets/photo-galery-background.png",
-  "/assets/footer-background.png",
+  assetUrl("back-ground.png"),
+  assetUrl("story-background.png"),
+  assetUrl("photo-galery-background.png"),
+  assetUrl("footer-background.png"),
 ];
 
 export default function Gallery({ t }) {

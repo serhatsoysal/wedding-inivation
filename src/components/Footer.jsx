@@ -1,10 +1,11 @@
 import ScrollReveal from "./ScrollReveal";
+import { assetUrl } from "../utils/assetUrl";
 
 export default function Footer({ t }) {
   return (
     <footer className="relative overflow-hidden py-16 sm:py-24">
       <img
-        src="/assets/footer-background.png"
+        src={assetUrl("footer-background.png")}
         alt=""
         className="absolute inset-0 h-full w-full object-cover"
         loading="lazy"

@@ -1,4 +1,5 @@
 import ScrollReveal from "./ScrollReveal";
+import { assetUrl } from "../utils/assetUrl";
 
 export default function WeddingInfo({ t }) {
   const cards = [
@@ -13,7 +14,7 @@ export default function WeddingInfo({ t }) {
       className="relative flex min-h-[60vh] items-center overflow-hidden scroll-mt-16 sm:min-h-[70vh]"
     >
       <img
-        src="/assets/story-background.png"
+        src={assetUrl("story-background.png")}
         alt=""
         className="absolute inset-0 h-full w-full object-cover"
         loading="lazy"

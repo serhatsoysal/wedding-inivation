@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 import { useCountdown } from "../hooks/useCountdown";
 import ScrollReveal from "./ScrollReveal";
+import { assetUrl } from "../utils/assetUrl";
 
 export default function Hero({ t }) {
   const weddingDate = useMemo(() => new Date(2026, 5, 21, 19, 0, 0), []);
@@ -19,7 +20,7 @@ export default function Hero({ t }) {
       className="relative flex min-h-svh items-center overflow-hidden scroll-mt-16"
     >
       <img
-        src="/assets/back-ground.png"
+        src={assetUrl("back-ground.png")}
         alt=""
         className="absolute inset-0 h-full w-full object-cover"
         style={{ animation: "gentle-breathe 8s ease-in-out infinite" }}
