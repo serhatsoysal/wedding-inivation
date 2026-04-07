@@ -2,6 +2,9 @@ import { useState, useEffect, useCallback } from "react";
 import ScrollReveal from "./ScrollReveal";
 import { assetUrl } from "../utils/assetUrl";
 
+const VENUE_MAPS_URL =
+  "https://www.google.com/maps/place/R%C3%BCyapark+D%C3%BC%C4%9F%C3%BCn+Salonu/@40.2111555,29.0392379,17z/data=!3m1!4b1!4m6!3m5!1s0x14ca15fc4587ae09:0x8fa06b85334c9c14!8m2!3d40.211217!4d29.0387818!16s%2Fg%2F11q8hvtz_m";
+
 function CalendarIcon() {
   return (
     <svg
@@ -312,7 +315,7 @@ export default function WeddingInfo({ t }) {
 
               <ScrollReveal delay={0.2} className="flex">
                 <a
-                  href="https://maps.google.com/?q=Grand+Elegance+Otel+Istanbul"
+                  href={VENUE_MAPS_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex w-full flex-col items-center rounded-2xl border border-[#e3d6ca]/50 bg-white/35 p-4 text-center shadow-md backdrop-blur-[2px] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg sm:p-5"
@@ -326,6 +329,9 @@ export default function WeddingInfo({ t }) {
                   </p>
                   <p className="text-xs font-medium text-[#5f4a41] sm:text-sm">
                     {t.venueCity}
+                  </p>
+                  <p className="mt-1.5 max-w-[11rem] text-[10px] leading-snug text-[#8f7d72] sm:max-w-none sm:text-xs">
+                    {t.venueAddress}
                   </p>
                   <p className="mt-auto pt-2 text-[10px] font-medium text-[#c9956b] sm:text-xs">
                     {t.venueMapHint}
