@@ -5,7 +5,7 @@ export default function Story({ t }) {
   return (
     <section
       id="story"
-      className="scroll-mt-16 bg-gradient-to-b from-[#fcf8f3] to-[#f5ede5] py-16 sm:py-24 lg:py-32"
+      className="min-h-[calc(100svh-4rem)] bg-gradient-to-b from-[#fcf8f3] to-[#f5ede5] py-16 sm:py-24 lg:py-32"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <ScrollReveal>

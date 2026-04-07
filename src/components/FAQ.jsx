@@ -40,7 +40,7 @@ export default function FAQ({ t }) {
   return (
     <section
       id="contact"
-      className="scroll-mt-16 bg-gradient-to-b from-[#f5ede5] to-[#fcf8f3] py-16 sm:py-24"
+      className="min-h-[calc(100svh-4rem)] bg-gradient-to-b from-[#f5ede5] to-[#fcf8f3] py-16 sm:py-24"
     >
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <ScrollReveal className="text-center">
